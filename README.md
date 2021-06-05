@@ -1,8 +1,7 @@
 ID3 Implementation for the Iris Flower Dataset
 ==============================================
 
-ID3 is a simple algorithm invented by Ross Quinlan in 1986 to build decision trees based on the information gain
-criterion and without pruning.
+ID3 is an algorithm invented by Ross Quinlan in 1986 to build decision trees based on the information gain criterion and without pruning.
 In this project, the ID3 algorithm was modified to perform binary splits and applied to the Iris flower dataset.
 
 Dataset
@@ -37,5 +36,6 @@ petal_width<1.0?
 			[True] Iris-versicolor
 			[False] Iris-virginica
 		[False] Iris-virginica
+
 accuracy on test set: 97.30%
 ```
