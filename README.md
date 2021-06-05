@@ -34,16 +34,8 @@ petal_width<1.0?
 	[True] Iris-setosa
 	[False] petal_width<1.8?
 		[True] petal_length<5.0?
-			[True] petal_width<1.7?
-				[True] Iris-versicolor
-				[False] Iris-virginica
-			[False] petal_width<1.6?
-				[True] Iris-virginica
-				[False] Iris-versicolor
-		[False] petal_length<4.9?
-			[True] sepal_width<3.1?
-				[True] Iris-virginica
-				[False] Iris-versicolor
+			[True] Iris-versicolor
 			[False] Iris-virginica
+		[False] Iris-virginica
 accuracy on test set: 97.30%
 ```

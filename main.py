@@ -3,7 +3,7 @@ import random
 import math
 
 # stopping criterion
-MINIMUM_SAMPLE_SIZE = 3
+MINIMUM_SAMPLE_SIZE = 4
 MAX_TREE_DEPTH = 3
 
 
@@ -27,7 +27,7 @@ class tree_node:
 
         # only proceed building tree if stopping criterion isn't matched
         # (number of tuples below threshold or all instances belong to same class)
-        if self.depth <= MAX_TREE_DEPTH and len(training_set) >= MINIMUM_SAMPLE_SIZE and len(set([elem["species"] for elem in training_set])) > 1:
+        if self.depth < MAX_TREE_DEPTH and len(training_set) >= MINIMUM_SAMPLE_SIZE and len(set([elem["species"] for elem in training_set])) > 1:
             # get attribute and split with highest information gain
             max_gain, attribute, split = max_information_gain(self.attribute_list, self.attribute_values, training_set)
 
